@@ -1,5 +1,6 @@
 package com.agnes.edukeri_app
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,16 @@ class FoundationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFoundationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.ivBack3.setOnClickListener {
+            startActivity(Intent(this, CoursesActivity::class.java))
+        }
+        binding.ivHome3.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+        binding.ivCourses3.setOnClickListener {
+            startActivity(Intent(this,  CoursesActivity::class.java))
+        }
 
         val level1 = LevelItem("", "Introduction to Computer Basics", "")
         val level2 = LevelItem("", "Intermediate Computer Skills", "")

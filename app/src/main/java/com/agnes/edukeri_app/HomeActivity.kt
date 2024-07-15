@@ -17,5 +17,14 @@ class HomeActivity : AppCompatActivity() {
         binding.textView4.setOnClickListener {
             startActivity(Intent(this, CoursesActivity::class.java))
         }
+        binding.ivBack2.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        binding.ivHome3.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+        binding.ivCourses3.setOnClickListener {
+            startActivity(Intent(this,  CoursesActivity::class.java))
+        }
     }
 }

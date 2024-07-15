@@ -18,6 +18,9 @@ class LoginActivity : AppCompatActivity() {
         binding.btnLogin.setOnClickListener {
             validateAndProceed()
         }
+        binding.tvSignUp.setOnClickListener {
+            startActivity(Intent(this, SignupActivity::class.java))
+        }
     }
 
     private fun validateAndProceed() {
@@ -32,7 +35,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         if (!isEditTextEmpty(binding.editTextEmailAddress) && !isEditTextEmpty(binding.editTextPassword)) {
-            // Proceed with login logic
             startActivity(Intent(this, HomeActivity::class.java))
         }
     }

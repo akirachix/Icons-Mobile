@@ -17,5 +17,14 @@ class CoursesActivity : AppCompatActivity() {
         binding.button2.setOnClickListener {
             startActivity(Intent(this, FoundationActivity::class.java))
         }
+        binding.ivBack4.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        binding.ivHome3.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+        binding.ivCourses3.setOnClickListener {
+            startActivity(Intent(this,  CoursesActivity::class.java))
+        }
     }
 }

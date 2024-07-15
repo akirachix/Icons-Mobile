@@ -17,9 +17,8 @@ class SignupActivity : AppCompatActivity() {
         binding.btnRegister.setOnClickListener {
             validateAndProceed()
         }
-
         binding.tvLogin.setOnClickListener {
-            validateAndProceed()
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 
