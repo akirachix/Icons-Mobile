@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Edukeri_App</string>
+    <string name="introduction_to_computer_n_basics">Introduction to Computer \n Basics</string>
+    <string name="advanced_level_digital_skills_entail">Advanced Level Digital Skills Entail</string>
 </resources>
